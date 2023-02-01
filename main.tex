@@ -1,0 +1,41 @@
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{listings}
+
+\newcommand{\cmdname}[1]{\texttt{#1}}
+\newcommand\footurl[1]{\footnote{\url{#1}}}
+\newcommand\urllink[2]{#1\footurl{#2}}
+\newcommand\foothref[3]{#1\footnote{\href{#2}{#3}}}
+\usepackage{upquote}
+
+
+\title{Blog}
+
+\author{Author Name}
+\date{Day Month Year}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+
+\tableofcontents
+\newpage
+
+\section{\date{1 February 2023}}
+ This blog is rendered using the using GitHub action provided by using Tex and GitHub pages using Make4ht and GitHub actions Tex is rendered in HTML and MathML. Thanks to this
+\urllink{Repo}{https://github.com/michal-h21/overleaf-html-sample}, that provides a link to a Docker container running Make4ht. This workflow does not require Overleaf as it works well using other editors such as TexMaker.
+
+
+ 
+ 
+ \end{document}
