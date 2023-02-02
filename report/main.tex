@@ -17,25 +17,75 @@
 \usepackage{upquote}
 
 
-\title{Blog}
-
-\author{Author Name}
-\date{Day Month Year}
+\title{Energy Reduction Pathways UK }
+\author{B1ngster}
+\date{\today}
 
 \begin{document}
-
 \maketitle
 \newpage
 
+\begin{abstract}
+\input{chapters/front_matter/abstract.tex}
+\end{abstract}
 
+
+\newpage
 \tableofcontents
 \newpage
 
-\section{\date{1 February 2023}}
- This blog is rendered using the using GitHub action provided by using Tex and GitHub pages using Make4ht and GitHub actions Tex is rendered in HTML and MathML. Thanks to this
-\urllink{Repo}{https://github.com/michal-h21/overleaf-html-sample}, that provides a link to a Docker container running Make4ht. This workflow does not require Overleaf as it works well using other editors such as TexMaker.
+
+ \section{Introduction}
+
+\LaTeX{} is great at typesetting mathematics \cite{Bond2014}. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i$$
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+\newpage
+
+%%%%%%%%%%%%%%%%%% SECTION  %%%%%%%%%%%%%%%%%%
+\section{Literature review} % edit section heading as appropriate
+    \subsection{Introduction}
+	
+	
+	\subsection{Background}
+
+	\subsection{Recent work}
+	\subsection{Summary}
 
 
+%%%%%%%%%%%%%%%%%% SECTION  %%%%%%%%%%%%%%%%%%
+\section{Methodology} 
+    \subsection{Introduction}
+	
+	\subsection{Data}
+   
+	\subsection{Method}
+	
+	
+	\subsection{Summary}
+	
+
+%%%%%%%%%%%%%%%%%% SECTION  %%%%%%%%%%%%%%%%%%
+\section{Results and discussion} 
+    \subsection{Introduction}
+	
+	\subsection{Detail}
  
+	\subsection{More detail}
+	
+	\subsection{Summary}
+
+
+%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%
+\section{Conclusions and future work} % edit section heading as appropriate
+    \subsection{Conclusions}
+
+	\subsection{Future work}
+\newpage
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
  
- \end{document}
