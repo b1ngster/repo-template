@@ -6,10 +6,16 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{shapes}
-\usepackage[backend=bibtex8]{biblatex}
 \usepackage{hyperref}
 \usepackage{listings}
 
+\usepackage[backend=biber,
+style=numeric,
+bibencoding=ascii
+%style=alphabetic
+%style=reading
+]{biblatex}
+\addbibresource{references.bib}
 
 
 
@@ -88,8 +94,6 @@ denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{
 	\subsection{Future work}
 \newpage
 
-\bibliographystyle{unsrt}
-\bibliography{references.bib}
 \printbibliography
 
 \end{document}
