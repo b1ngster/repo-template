@@ -1,16 +1,100 @@
 \documentclass{article}
-\usepackage[T1]{fontenc}
+
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage[czech]{babel}
-\usepackage{biblatex}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\usepackage{hyperref}
+\usepackage{listings}
+
+\usepackage[backend=biber,
+style=numeric,
+bibencoding=ascii
+%style=alphabetic
+%style=reading
+]{biblatex}
 \addbibresource{references.bib}
-\title{Základní dokument v češtině}
-\author{Michal Hoftich}
+
+
+
+
+\newcommand{\cmdname}[1]{\texttt{#1}}
+\newcommand\footurl[1]{\footnote{\url{#1}}}
+\newcommand\urllink[2]{#1\footurl{#2}}
+\newcommand\foothref[3]{#1\footnote{\href{#2}{#3}}}
+\usepackage{upquote}
+
+
+\title{Data Science Report }
+\author{B1ngster}
+\date{\today}
+
 \begin{document}
 \maketitle
+\newpage
+
+\begin{abstract}
+\input{chapters/front_matter/abstract.tex}
+\end{abstract}
+
+
+\newpage
 \tableofcontents
-\section{Úvod}
-Příliš žluťoučký kůň \textit{úpěl} \textbf{ďábelské ódy} \parencite{article-full}
+\newpage
+
+
+ \section{Introduction}
+
+\LaTeX{} is great at typesetting mathematics \cite{Bond2014}. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i$$
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+\newpage
+
+%%%%%%%%%%%%%%%%%% SECTION  %%%%%%%%%%%%%%%%%%
+\section{Literature review} % edit section heading as appropriate
+    \subsection{Introduction}
+	
+	
+	\subsection{Background}
+
+	\subsection{Recent work}
+	\subsection{Summary}
+
+
+%%%%%%%%%%%%%%%%%% SECTION  %%%%%%%%%%%%%%%%%%
+\section{Methodology} 
+    \subsection{Introduction}
+	
+	\subsection{Data}
+   
+	\subsection{Method}
+	
+	
+	\subsection{Summary}
+	
+
+%%%%%%%%%%%%%%%%%% SECTION  %%%%%%%%%%%%%%%%%%
+\section{Results and discussion} 
+    \subsection{Introduction}
+	
+	\subsection{Detail}
+ 
+	\subsection{More detail}
+	
+	\subsection{Summary}
+
+
+%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%
+\section{Conclusions and future work} % edit section heading as appropriate
+    \subsection{Conclusions}
+
+	\subsection{Future work}
+\newpage
 
 \printbibliography
+
 \end{document}
+ 
