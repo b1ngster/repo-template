@@ -1,4 +1,5 @@
-  Make:htlatex{}
-  Make:biber {}
-  Make:htlatex {}
-  Make:htlatex {}
+Make:add("biber","biber ${input}")
+Make:htlatex {}
+Make:biber {}
+Make:htlatex {}
+Make:htlatex {}
