@@ -11,6 +11,8 @@
 \usepackage{listings}
 \usepackage[nottoc]{tocbibind}
 
+
+
 \bibliographystyle{apalike}
 
 
@@ -94,7 +96,31 @@ denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{
 %\bibliographystyle{unsrt}
 %\bibliography{references}
 
-\bibliography{report/references}
+
+\begin{filecontents}{\jobname.bib}
+@article{einstein,
+    author =       "Albert Einstein",
+    title =        "{Zur Elektrodynamik bewegter K{\"o}rper}. ({German})
+        [{On} the electrodynamics of moving bodies]",
+    journal =      "Annalen der Physik",
+    volume =       "322",
+    number =       "10",
+    pages =        "891--921",
+    year =         "1905",
+    DOI =          "http://dx.doi.org/10.1002/andp.19053221004"
+}
+
+
+@misc{knuthwebsite,
+    author    =  "Donald Knuth",
+    year      = "2019",
+    title     = "Knuth: Computers and Typesetting",
+    url       = "http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html"
+}
+\end{filecontents}
+
+
+\bibliography{\jobname.bib}
 
 
 \end{document}
