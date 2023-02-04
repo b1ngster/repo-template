@@ -12,8 +12,13 @@
 \usepackage[nottoc]{tocbibind}
 
 
+\usepackage[
+backend=biber,
+style=alphabetic,
+citestyle=authoryear 
+]{biblatex}
+ \addbibresource{\jobname.bib}
 
-\bibliographystyle{apalike}
 
 
 \newcommand{\cmdname}[1]{\texttt{#1}}
@@ -120,8 +125,7 @@ denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{
 \end{filecontents}
 
 
-\bibliography{\jobname.bib}
-
+\printbibliography
 
 \end{document}
  
